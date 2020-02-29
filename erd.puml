@@ -1,0 +1,58 @@
+@startuml prototype
+
+entity "user" {
+  + id [PK]
+  ==
+  name:string
+  * email:string
+  password_digest:string
+  created_at:datetime
+  updated_at:datetime
+}
+
+entity "employer" {
+  + id [PK]
+  ==
+  # user_id [FK(user, id)]
+  created_at:datetime
+  updated_at:datetime
+}
+
+entity "job" {
+  + id [PK]
+  ==
+  # employer_id [FK(employer, id)]
+  name:string
+  content:text
+  created_at:datetime
+  updated_at:datetime
+}
+
+entity "employee" {
+  + id [PK]
+  ==
+  # user_id [FK(user, id)]
+  created_at:datetime
+  updated_at:datetime
+}
+
+entity "like" {
+  + id [PK]
+  ==
+  # employee_id [FK(employee, id)]
+  # job_id [FK(job, id)]
+  employee_like:boolean
+  employer_like:boolean
+  created_at:datetime
+  updated_at:datetime
+}
+
+user ||--o| employer
+user ||--o| employee
+
+employer ||--o{ job
+
+job ||--o{ like
+employee ||--o{ like
+
+@enduml
