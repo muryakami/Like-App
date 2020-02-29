@@ -35,7 +35,7 @@ TODO:
 
 ## Database Design
 
-![prototype](https://user-images.githubusercontent.com/32145722/75615045-8694db80-5b82-11ea-8081-7b1f984279d4.png)
+![prototype](https://user-images.githubusercontent.com/32145722/75615552-5a7c5900-5b88-11ea-943e-a7639c18b967.png)
 
 # Features
 
