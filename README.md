@@ -29,13 +29,19 @@ TODO:
 
 ## Web API
 
-| API | 説明 |
-|:---|:---|
-| /users/* | ユーザ に関する操作 |
+| HTTP Request | URI Pattern | Controller#Action | Usage |
+|:---|:---|:---|:---|
+| GET       | /users          | index   | すべてのユーザーを一覧するページ   |
+| GET       | /users/:id      | show    | :id のユーザーを表示するページ     |
+| GET       | /users/new      | new     | 新規ユーザーを作成するページ       |
+| POST      | /users          | create  | ユーザーを作成するアクション       |
+| GET       | /users/:id/edit | edit    | :id のユーザーを編集するページ     |
+| PATCH/PUT | /users/:id      | update  | :id のユーザーを更新するアクション |
+| DELETE    | /users/:id      | destroy | :id のユーザーを削除するアクション |
 
 ## Database Design
 
-![prototype](https://user-images.githubusercontent.com/32145722/75615045-8694db80-5b82-11ea-8081-7b1f984279d4.png)
+![prototype](https://user-images.githubusercontent.com/32145722/75615552-5a7c5900-5b88-11ea-943e-a7639c18b967.png)
 
 # Features
 

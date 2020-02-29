@@ -6,6 +6,7 @@ entity "user" {
   name:string
   * email:string
   password_digest:string
+  remember_digest:string
   created_at:datetime
   updated_at:datetime
 }
