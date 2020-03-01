@@ -31,13 +31,16 @@ TODO:
 
 | Prefix | HTTP Verb | URI Pattern | Controller#Action | Used for |
 |:---|:---|:---|:---|:---|
-| signup    | GET       | /signup         | users#new     | 新規ユーザーを作成するページ       |
-| users     | GET       | /users          | users#index   | すべてのユーザーを一覧するページ   |
-| user      | GET       | /users/:id      | users#show    | :id のユーザーを表示するページ     |
-| edit_user | GET       | /users/:id/edit | users#edit    | :id のユーザーを編集するページ     |
-| users     | POST      | /users          | users#create  | ユーザーを作成するアクション       |
-| user      | PATCH/PUT | /users/:id      | users#update  | :id のユーザーを更新するアクション |
-| user      | DELETE    | /users/:id      | users#destroy | :id のユーザーを削除するアクション |
+| login     | GET       | /login          | sessions#new     | 新しいセッションのページ (ログイン) |
+| login     | POST      | /login          | sessions#create  | 新しいセッションの作成 (ログイン)   |
+| logout    | DELETE    | /logout         | sessions#destroy | 新しいセッションの作成 (ログイン)   |
+| signup    | GET       | /signup         | users#new        | 新規ユーザーを作成するページ        |
+| users     | GET       | /users          | users#index      | すべてのユーザーを一覧するページ    |
+| user      | GET       | /users/:id      | users#show       | :id のユーザーを表示するページ      |
+| edit_user | GET       | /users/:id/edit | users#edit       | :id のユーザーを編集するページ      |
+| users     | POST      | /users          | users#create     | ユーザーを作成するアクション        |
+| user      | PATCH/PUT | /users/:id      | users#update     | :id のユーザーを更新するアクション  |
+| user      | DELETE    | /users/:id      | users#destroy    | :id のユーザーを削除するアクション  |
 
 ## Database Design
 
