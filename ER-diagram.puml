@@ -7,6 +7,7 @@ entity "user" {
   * email:string
   password_digest:string
   remember_digest:string
+  admin:boolean
   created_at:datetime
   updated_at:datetime
 }
