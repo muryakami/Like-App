@@ -28,8 +28,8 @@ RSpec.describe "Users", type: :request do
     end
   end
 
-  describe "GET /users/new" do
-    subject { get new_user_path }
+  describe "GET /signup" do
+    subject { get signup_path }
 
     context "Positive Condition" do
       it "receives Status OK" do
@@ -55,8 +55,8 @@ RSpec.describe "Users", type: :request do
     end
   end
 
-  describe "POST /users" do
-    subject { post users_path, params: params }
+  describe "POST /signup" do
+    subject { post signup_path, params: params }
     let(:params) { {user: user_params} }
     let(:user_params) { {name: name, email: email, password: password, password_confirmation: password} }
 
