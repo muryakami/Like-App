@@ -23,12 +23,17 @@
 
   <div class="field">
     <%= form.label :password_digest %>
-    <%= form.text_field :password_digest %>
+    <%= form.password_field :password_digest %>
   </div>
 
   <div class="field">
-    <%= form.label :remember_digest %>
-    <%= form.text_field :remember_digest %>
+    <%= form.label :password_confirmation %>
+    <%= form.password_field :password_confirmation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :enterprise %>
+    <%= form.check_box :enterprise %>
   </div>
 
   <div class="actions">
