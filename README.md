@@ -27,7 +27,7 @@
 
 TODO:
 
-## Web API
+## API Design
 
 | HTTP Request | URI Pattern | Controller#Action | Usage |
 |:---|:---|:---|:---|
