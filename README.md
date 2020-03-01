@@ -31,13 +31,13 @@ TODO:
 
 | HTTP Request | URI Pattern | Controller#Action | Usage |
 |:---|:---|:---|:---|
-| GET       | /users          | index   | すべてのユーザーを一覧するページ   |
-| GET       | /users/:id      | show    | :id のユーザーを表示するページ     |
-| GET       | /users/new      | new     | 新規ユーザーを作成するページ       |
-| POST      | /users          | create  | ユーザーを作成するアクション       |
-| GET       | /users/:id/edit | edit    | :id のユーザーを編集するページ     |
-| PATCH/PUT | /users/:id      | update  | :id のユーザーを更新するアクション |
-| DELETE    | /users/:id      | destroy | :id のユーザーを削除するアクション |
+| GET       | /users          | users#index   | すべてのユーザーを一覧するページ   |
+| GET       | /users/:id      | users#show    | :id のユーザーを表示するページ     |
+| GET       | /users/new      | users#new     | 新規ユーザーを作成するページ       |
+| POST      | /users          | users#create  | ユーザーを作成するアクション       |
+| GET       | /users/:id/edit | users#edit    | :id のユーザーを編集するページ     |
+| PATCH/PUT | /users/:id      | users#update  | :id のユーザーを更新するアクション |
+| DELETE    | /users/:id      | users#destroy | :id のユーザーを削除するアクション |
 
 ## Database Design
 
