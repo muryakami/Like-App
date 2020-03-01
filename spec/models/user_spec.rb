@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+
   let(:user) { User.new(name: name, email: email, password: password, password_confirmation: password) }
   let(:name) { "name" }
   let(:email) { "email@example.com" }
@@ -74,4 +75,5 @@ RSpec.describe User, type: :model do
       it { is_expected.to eq mixed_case_email.downcase }
     end
   end
+
 end
