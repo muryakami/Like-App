@@ -34,8 +34,8 @@ TODO:
 | GET       | /users          | users#index   | すべてのユーザーを一覧するページ   |
 | GET       | /users/:id      | users#show    | :id のユーザーを表示するページ     |
 | GET       | /users/new      | users#new     | 新規ユーザーを作成するページ       |
-| POST      | /users          | users#create  | ユーザーを作成するアクション       |
 | GET       | /users/:id/edit | users#edit    | :id のユーザーを編集するページ     |
+| POST      | /users          | users#create  | ユーザーを作成するアクション       |
 | PATCH/PUT | /users/:id      | users#update  | :id のユーザーを更新するアクション |
 | DELETE    | /users/:id      | users#destroy | :id のユーザーを削除するアクション |
 
