@@ -27,21 +27,21 @@
 
 TODO:
 
-## Web API
+## API Design
 
-| HTTP Request | URI Pattern | Controller#Action | Usage |
-|:---|:---|:---|:---|
-| GET       | /users          | index   | すべてのユーザーを一覧するページ   |
-| GET       | /users/:id      | show    | :id のユーザーを表示するページ     |
-| GET       | /users/new      | new     | 新規ユーザーを作成するページ       |
-| POST      | /users          | create  | ユーザーを作成するアクション       |
-| GET       | /users/:id/edit | edit    | :id のユーザーを編集するページ     |
-| PATCH/PUT | /users/:id      | update  | :id のユーザーを更新するアクション |
-| DELETE    | /users/:id      | destroy | :id のユーザーを削除するアクション |
+| Prefix | HTTP Verb | URI Pattern | Controller#Action | Used for |
+|:---|:---|:---|:---|:---|
+| signup    | GET       | /signup         | users#new     | 新規ユーザーを作成するページ       |
+| users     | GET       | /users          | users#index   | すべてのユーザーを一覧するページ   |
+| user      | GET       | /users/:id      | users#show    | :id のユーザーを表示するページ     |
+| edit_user | GET       | /users/:id/edit | users#edit    | :id のユーザーを編集するページ     |
+| users     | POST      | /users          | users#create  | ユーザーを作成するアクション       |
+| user      | PATCH/PUT | /users/:id      | users#update  | :id のユーザーを更新するアクション |
+| user      | DELETE    | /users/:id      | users#destroy | :id のユーザーを削除するアクション |
 
 ## Database Design
 
-![prototype](https://user-images.githubusercontent.com/32145722/75615552-5a7c5900-5b88-11ea-943e-a7639c18b967.png)
+![prototype](https://user-images.githubusercontent.com/32145722/75621820-cdafba80-5bdc-11ea-887d-2e1e0d316dc9.png)
 
 # Features
 
