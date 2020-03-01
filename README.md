@@ -27,25 +27,6 @@
 
 TODO:
 
-## API Design
-
-| Prefix | HTTP Verb | URI Pattern | Controller#Action | Used for |
-|:---|:---|:---|:---|:---|
-| login     | GET       | /login          | sessions#new     | 新しいセッションのページ (ログイン) |
-| login     | POST      | /login          | sessions#create  | 新しいセッションの作成 (ログイン)   |
-| logout    | DELETE    | /logout         | sessions#destroy | 新しいセッションの作成 (ログイン)   |
-| signup    | GET       | /signup         | users#new        | 新規ユーザーを作成するページ        |
-| users     | GET       | /users          | users#index      | すべてのユーザーを一覧するページ    |
-| user      | GET       | /users/:id      | users#show       | :id のユーザーを表示するページ      |
-| edit_user | GET       | /users/:id/edit | users#edit       | :id のユーザーを編集するページ      |
-| users     | POST      | /users          | users#create     | ユーザーを作成するアクション        |
-| user      | PATCH/PUT | /users/:id      | users#update     | :id のユーザーを更新するアクション  |
-| user      | DELETE    | /users/:id      | users#destroy    | :id のユーザーを削除するアクション  |
-
-## Database Design
-
-![prototype](https://user-images.githubusercontent.com/32145722/75621820-cdafba80-5bdc-11ea-887d-2e1e0d316dc9.png)
-
 # Features
 
 - Rails 6.0.2.1 on Docker
@@ -100,6 +81,25 @@ $ heroku open
 # Note
 
 TODO:
+
+# API Design
+
+| Prefix | HTTP Verb | URI Pattern | Controller#Action | Used for |
+|:---|:---|:---|:---|:---|
+| login     | GET       | /login          | sessions#new     | 新しいセッションのページ (ログイン) |
+| login     | POST      | /login          | sessions#create  | 新しいセッションの作成 (ログイン)   |
+| logout    | DELETE    | /logout         | sessions#destroy | 新しいセッションの作成 (ログイン)   |
+| signup    | GET       | /signup         | users#new        | 新規ユーザーを作成するページ        |
+| users     | GET       | /users          | users#index      | すべてのユーザーを一覧するページ    |
+| user      | GET       | /users/:id      | users#show       | :id のユーザーを表示するページ      |
+| edit_user | GET       | /users/:id/edit | users#edit       | :id のユーザーを編集するページ      |
+| users     | POST      | /users          | users#create     | ユーザーを作成するアクション        |
+| user      | PATCH/PUT | /users/:id      | users#update     | :id のユーザーを更新するアクション  |
+| user      | DELETE    | /users/:id      | users#destroy    | :id のユーザーを削除するアクション  |
+
+# Database Design
+
+![prototype](https://user-images.githubusercontent.com/32145722/75621820-cdafba80-5bdc-11ea-887d-2e1e0d316dc9.png)
 
 # Author
 
