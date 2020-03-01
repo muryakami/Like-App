@@ -29,15 +29,15 @@ TODO:
 
 ## API Design
 
-| HTTP Request | URI Pattern | Controller#Action | Usage |
-|:---|:---|:---|:---|
-| GET       | /users          | users#index   | すべてのユーザーを一覧するページ   |
-| GET       | /users/:id      | users#show    | :id のユーザーを表示するページ     |
-| GET       | /users/new      | users#new     | 新規ユーザーを作成するページ       |
-| GET       | /users/:id/edit | users#edit    | :id のユーザーを編集するページ     |
-| POST      | /users          | users#create  | ユーザーを作成するアクション       |
-| PATCH/PUT | /users/:id      | users#update  | :id のユーザーを更新するアクション |
-| DELETE    | /users/:id      | users#destroy | :id のユーザーを削除するアクション |
+| Prefix | HTTP Verb | URI Pattern | Controller#Action | Used for |
+|:---|:---|:---|:---|:---|
+| users     | GET       | /users          | users#index   | すべてのユーザーを一覧するページ   |
+| user      | GET       | /users/:id      | users#show    | :id のユーザーを表示するページ     |
+| new_user  | GET       | /users/new      | users#new     | 新規ユーザーを作成するページ       |
+| edit_user | GET       | /users/:id/edit | users#edit    | :id のユーザーを編集するページ     |
+| users     | POST      | /users          | users#create  | ユーザーを作成するアクション       |
+| user      | PATCH/PUT | /users/:id      | users#update  | :id のユーザーを更新するアクション |
+| user      | DELETE    | /users/:id      | users#destroy | :id のユーザーを削除するアクション |
 
 ## Database Design
 
