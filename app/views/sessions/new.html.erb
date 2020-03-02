@@ -11,6 +11,13 @@
     <%= form.password_field :password %>
   </div>
 
+  <div class="field">
+    <%= form.label :remember_me do %>
+      <%= form.check_box :remember_me %>
+      <span>Remember me on this computer</span>
+    <% end %>
+  </div>
+
   <div class="actions">
     <%= form.submit "Log in" %>
   </div>
