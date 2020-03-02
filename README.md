@@ -29,7 +29,7 @@ TODO:
 
 - Rails 6.0.2.1 on Docker
 - Docker images based on Alpine Linux
-- Deploy to Heroku using Docker
+- Deploy the Application to Heroku with Docker
 
 # Requirement
 
@@ -82,7 +82,7 @@ TODO:
 
 # API Design
 
-| Prefix | HTTP Verb | URI Pattern | Controller#Action | Used for |
+| Prefix | HTTP Verb | Path | Controller#Action | Used for |
 |:---|:---|:---|:---|:---|
 | login     | GET       | /login          | sessions#new     | 新しいセッションのページ (ログイン) |
 | login     | POST      | /login          | sessions#create  | 新しいセッションの作成 (ログイン)   |
