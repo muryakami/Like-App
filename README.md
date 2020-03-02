@@ -1,8 +1,6 @@
 # Like-App
 
-"Like-App" は [muryakami](https://github.com/muryakami) のコーディングスキルを確認するために用意したリポジトリです
-
-いわゆるポートフォリオです
+"Like-App" は [muryakami](https://github.com/muryakami) のコーディングスキルを確認するために用意した Portfolio リポジトリです
 
 ## Objective
 
@@ -10,7 +8,7 @@
 
 ## Assignment
 
-[URI]()
+[Requirements]()
 
 ## Branch Operation
 
@@ -88,7 +86,7 @@ TODO:
 |:---|:---|:---|:---|:---|
 | login     | GET       | /login          | sessions#new     | 新しいセッションのページ (ログイン) |
 | login     | POST      | /login          | sessions#create  | 新しいセッションの作成 (ログイン)   |
-| logout    | DELETE    | /logout         | sessions#destroy | 新しいセッションの作成 (ログイン)   |
+| logout    | DELETE    | /logout         | sessions#destroy | セッションの削除 (ログアウト)       |
 | signup    | GET       | /signup         | users#new        | 新規ユーザーを作成するページ        |
 | users     | GET       | /users          | users#index      | すべてのユーザーを一覧するページ    |
 | user      | GET       | /users/:id      | users#show       | :id のユーザーを表示するページ      |
