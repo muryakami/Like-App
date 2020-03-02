@@ -97,7 +97,7 @@ TODO:
 
 # Database Design
 
-![prototype](https://user-images.githubusercontent.com/32145722/75621820-cdafba80-5bdc-11ea-887d-2e1e0d316dc9.png)
+![prototype](https://user-images.githubusercontent.com/32145722/75718886-166b8e80-5d17-11ea-857a-65dee2e378e4.png)
 
 # Author
 

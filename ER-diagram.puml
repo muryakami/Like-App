@@ -8,32 +8,25 @@ entity "user" {
   password_digest:string
   remember_digest:string
   admin:boolean
+  type:string
   created_at:datetime
   updated_at:datetime
 }
 
-entity "employer" {
-  + id [PK]
-  ==
-  # user_id [FK(user, id)]
-  created_at:datetime
-  updated_at:datetime
+entity "employer < user" as employer {
+  + id [PK(user, id)]
+}
+
+entity "employee < user" as employee {
+  + id [PK(user, id)]
 }
 
 entity "job" {
   + id [PK]
   ==
-  # employer_id [FK(employer, id)]
+  # user_id [FK(user, id)]
   name:string
   content:text
-  created_at:datetime
-  updated_at:datetime
-}
-
-entity "employee" {
-  + id [PK]
-  ==
-  # user_id [FK(user, id)]
   created_at:datetime
   updated_at:datetime
 }
@@ -41,10 +34,10 @@ entity "employee" {
 entity "like" {
   + id [PK]
   ==
-  # employee_id [FK(employee, id)]
+  # user_id [FK(user, id)]
   # job_id [FK(job, id)]
-  employee_like:boolean
-  employer_like:boolean
+  user_like:boolean
+  job_like:boolean
   created_at:datetime
   updated_at:datetime
 }
