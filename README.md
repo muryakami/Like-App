@@ -1,8 +1,6 @@
 # Like-App
 
-"Like-App" は [muryakami](https://github.com/muryakami) のコーディングスキルを確認するために用意したリポジトリです
-
-いわゆるポートフォリオです
+"Like-App" は [muryakami](https://github.com/muryakami) のコーディングスキルを確認するために用意した Portfolio リポジトリです
 
 ## Objective
 
@@ -10,7 +8,7 @@
 
 ## Assignment
 
-[URI]()
+[Requirements]()
 
 ## Branch Operation
 
