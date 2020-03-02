@@ -32,8 +32,10 @@
   </div>
 
   <div class="field">
-    <%= form.label :enterprise %>
-    <%= form.check_box :enterprise %>
+    <%= form.label :enterprise do %>
+      <%= form.check_box :enterprise %>
+      <span>I am an employer</span>
+    <% end %>
   </div>
 
   <div class="actions">
