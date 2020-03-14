@@ -7,6 +7,7 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }
+  validates :type, presence: true
 
   before_save { email.downcase! }
 
@@ -35,4 +36,10 @@ class User < ApplicationRecord
   def forget
     update_attribute(:remember_digest, nil)
   end
+end
+
+class Employer < User
+end
+
+class Employee < User
 end
