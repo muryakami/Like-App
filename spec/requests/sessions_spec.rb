@@ -24,7 +24,7 @@ RSpec.describe "Sessions", type: :request do
 
     context "Positive Condition" do
       before do
-        User.create(name: name, email: email, password: password, password_confirmation: password)
+        User.create!(name: name, email: email, password: password, password_confirmation: password)
       end
       it "receives Status Found" do
         subject
@@ -43,7 +43,7 @@ RSpec.describe "Sessions", type: :request do
       let(:email) { "email@example.com" }
       let(:password) { "password" }
       before do
-        User.create(name: name, email: email, password: password, password_confirmation: password)
+        User.create!(name: name, email: email, password: password, password_confirmation: password)
         post login_path, params: params
       end
       it "receives Status Found" do
