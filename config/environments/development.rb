@@ -5,6 +5,9 @@ Rails.application.configure do
   # https://github.com/rails/rails/pull/33145
   config.hosts << "vast-everglades-51104.herokuapp.com"
 
+  # https://qiita.com/terufumi1122/items/73da039e6fc90ee0a63f
+  config.web_console.whitelisted_ips = "192.168.176.1"
+
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
