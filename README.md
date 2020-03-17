@@ -114,6 +114,14 @@ TODO:
 | job       | PATCH/PUT | /jobs/:id       | jobs#update      | :id の求人票を更新するアクション    |
 | job       | DELETE    | /jobs/:id       | jobs#destroy     | :id の求人票を削除するアクション    |
 
+## Likes
+
+| Prefix | HTTP Verb | Path | Controller#Action | Used for |
+|:---|:---|:---|:---|:---|
+| likes     | POST      | /likes          | likes#create     | いいねを作成するアクション          |
+| like      | PATCH/PUT | /likes/:id      | likes#update     | :id のいいねを更新するアクション    |
+| like      | DELETE    | /likes/:id      | likes#destroy    | :id のいいねを削除するアクション    |
+
 # Database Design
 
 ![prototype](https://user-images.githubusercontent.com/32145722/76881314-4d67a580-68bc-11ea-8d0f-0abb9d3053c4.png)
