@@ -48,4 +48,6 @@ class Employer < User
 end
 
 class Employee < User
+  has_many :likes, dependent: :destroy
+  has_many :jobs, through: :likes
 end
