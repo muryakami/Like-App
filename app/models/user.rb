@@ -37,6 +37,10 @@ class User < ApplicationRecord
   def forget
     update_attribute(:remember_digest, nil)
   end
+
+  def jobs_of_employer
+    self.jobs if self.is_a?(Employer)
+  end
 end
 
 class Employer < User

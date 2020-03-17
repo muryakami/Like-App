@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @jobs = @user.jobs_of_employer
   end
 
   # GET /signup
