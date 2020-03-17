@@ -94,9 +94,9 @@ TODO:
 
 | Prefix | HTTP Verb | Path | Controller#Action | Used for |
 |:---|:---|:---|:---|:---|
-| signup    | GET       | /signup         | users#new        | 新規ユーザーを作成するページ        |
 | users     | GET       | /users          | users#index      | すべてのユーザーを一覧するページ    |
 | user      | GET       | /users/:id      | users#show       | :id のユーザーを表示するページ      |
+| signup    | GET       | /signup         | users#new        | 新規ユーザーを作成するページ        |
 | edit_user | GET       | /users/:id/edit | users#edit       | :id のユーザーを編集するページ      |
 | users     | POST      | /users          | users#create     | ユーザーを作成するアクション        |
 | user      | PATCH/PUT | /users/:id      | users#update     | :id のユーザーを更新するアクション  |
