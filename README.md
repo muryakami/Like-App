@@ -94,10 +94,17 @@ TODO:
 | users     | POST      | /users          | users#create     | ユーザーを作成するアクション        |
 | user      | PATCH/PUT | /users/:id      | users#update     | :id のユーザーを更新するアクション  |
 | user      | DELETE    | /users/:id      | users#destroy    | :id のユーザーを削除するアクション  |
+| jobs      | GET       | /jobs           | jobs#index       | すべての求人票を一覧するページ      |
+| job       | GET       | /jobs/:id       | jobs#show        | :id の求人票を表示するページ        |
+| new_job   | GET       | /jobs/new       | jobs#new         | 新規求人票を作成するページ          |
+| edit_job  | GET       | /jobs/:id/edit  | jobs#edit        | :id の求人票を編集するページ        |
+| jobs      | POST      | /jobs           | jobs#create      | 求人票を作成するアクション          |
+| job       | PATCH/PUT | /jobs/:id       | jobs#update      | :id の求人票を更新するアクション    |
+| job       | DELETE    | /jobs/:id       | jobs#destroy     | :id の求人票を削除するアクション    |
 
 # Database Design
 
-![prototype](https://user-images.githubusercontent.com/32145722/75718886-166b8e80-5d17-11ea-857a-65dee2e378e4.png)
+![prototype](https://user-images.githubusercontent.com/32145722/76701132-b0610d00-6701-11ea-9fdb-37b56606646f.png)
 
 # Author
 

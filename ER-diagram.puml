@@ -24,7 +24,7 @@ entity "employee < user" as employee {
 entity "job" {
   + id [PK]
   ==
-  # user_id [FK(user, id)]
+  # employer_id [FK(employer, id)]
   name:string
   content:text
   created_at:datetime
@@ -34,9 +34,9 @@ entity "job" {
 entity "like" {
   + id [PK]
   ==
-  # user_id [FK(user, id)]
+  # employee_id [FK(employee, id)]
   # job_id [FK(job, id)]
-  user_like:boolean
+  employee_like:boolean
   job_like:boolean
   created_at:datetime
   updated_at:datetime
