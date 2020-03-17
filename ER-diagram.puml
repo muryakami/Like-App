@@ -25,7 +25,7 @@ entity "job" {
   + id [PK]
   ==
   # employer_id [FK(employer, id)]
-  name:string
+  title:string
   content:text
   created_at:datetime
   updated_at:datetime
