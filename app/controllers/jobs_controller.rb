@@ -1,5 +1,8 @@
 class JobsController < ApplicationController
-  before_action :set_job, only: [:show, :edit, :update, :destroy]
+  before_action :logged_in_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_job,        only: [:show, :edit, :update, :destroy]
+  before_action :correct_user,   only: [:edit, :update]
+  before_action :admin_user,     only: :destroy
 
   # GET /jobs
   # GET /jobs.json
@@ -65,6 +68,7 @@ class JobsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_job
       @job = Job.find(params[:id])
+      @user = @job.employer
     end
 
     # Only allow a list of trusted parameters through.
