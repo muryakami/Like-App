@@ -82,11 +82,18 @@ TODO:
 
 # API Design
 
+## Sessions
+
 | Prefix | HTTP Verb | Path | Controller#Action | Used for |
 |:---|:---|:---|:---|:---|
 | login     | GET       | /login          | sessions#new     | 新しいセッションのページ (ログイン) |
 | login     | POST      | /login          | sessions#create  | 新しいセッションの作成 (ログイン)   |
 | logout    | DELETE    | /logout         | sessions#destroy | セッションの削除 (ログアウト)       |
+
+## Users
+
+| Prefix | HTTP Verb | Path | Controller#Action | Used for |
+|:---|:---|:---|:---|:---|
 | signup    | GET       | /signup         | users#new        | 新規ユーザーを作成するページ        |
 | users     | GET       | /users          | users#index      | すべてのユーザーを一覧するページ    |
 | user      | GET       | /users/:id      | users#show       | :id のユーザーを表示するページ      |
@@ -94,6 +101,11 @@ TODO:
 | users     | POST      | /users          | users#create     | ユーザーを作成するアクション        |
 | user      | PATCH/PUT | /users/:id      | users#update     | :id のユーザーを更新するアクション  |
 | user      | DELETE    | /users/:id      | users#destroy    | :id のユーザーを削除するアクション  |
+
+## Jobs
+
+| Prefix | HTTP Verb | Path | Controller#Action | Used for |
+|:---|:---|:---|:---|:---|
 | jobs      | GET       | /jobs           | jobs#index       | すべての求人票を一覧するページ      |
 | job       | GET       | /jobs/:id       | jobs#show        | :id の求人票を表示するページ        |
 | new_job   | GET       | /jobs/new       | jobs#new         | 新規求人票を作成するページ          |
@@ -104,7 +116,7 @@ TODO:
 
 # Database Design
 
-![prototype](https://user-images.githubusercontent.com/32145722/76701132-b0610d00-6701-11ea-9fdb-37b56606646f.png)
+![prototype](https://user-images.githubusercontent.com/32145722/76881314-4d67a580-68bc-11ea-8d0f-0abb9d3053c4.png)
 
 # Author
 
