@@ -48,7 +48,7 @@ RSpec.describe User, type: :model do
       before do
         duplicate_user = user.dup
         duplicate_user.email = user.email.upcase
-        duplicate_user.save
+        duplicate_user.save!
       end
       it { is_expected.to eq false }
     end
@@ -70,7 +70,7 @@ RSpec.describe User, type: :model do
       let(:mixed_case_email) { "Foo@ExAMPle.CoM" }
       before do
         user.email = mixed_case_email
-        user.save
+        user.save!
       end
       it { is_expected.to eq mixed_case_email.downcase }
     end
