@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2020_03_15_112849) do
 
   create_table "jobs", force: :cascade do |t|
     t.integer "employer_id", null: false
-    t.string "name", null: false
+    t.string "title", null: false
     t.text "content", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
