@@ -15,9 +15,10 @@
   <tbody>
     <% @jobs.each do |job| %>
       <tr>
-        <td><%= job.employer_id %></td>
+        <td><%= link_to job.employer.name, user_path(job.employer) %></td>
         <td><%= job.title %></td>
         <td><%= job.content %></td>
+        <td><%= render 'likes/like', like: job.likes.find_by(employee: current_user), job: job %></td>
         <td><%= link_to 'Show', job %></td>
         <td><%= link_to 'Edit', edit_job_path(job) %></td>
         <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>

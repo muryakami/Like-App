@@ -1,0 +1,13 @@
+<span id="job_<%= job.id %>">
+  <% if like %>
+    <% if like.employee_like && like.job_like %>
+      <%= link_to "マッチ", like_path(id: like.id, job_id: job.id, like: false), method: :patch, remote: true %>
+    <% elsif like.employee_like %>
+      <%= link_to "いいね済み", like_path(id: like.id, job_id: job.id), method: :delete, remote: true %>
+    <% else %>
+      <%= link_to "いいね", like_path(id: like.id, job_id: job.id, like: true), method: :patch, remote: true %>
+    <% end %>
+  <% else %>
+    <%= link_to "いいね", likes_path(job_id: job.id, like: true), method: :post, remote: true %>
+  <% end %>
+</span>

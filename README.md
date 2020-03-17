@@ -94,9 +94,9 @@ TODO:
 
 | Prefix | HTTP Verb | Path | Controller#Action | Used for |
 |:---|:---|:---|:---|:---|
-| signup    | GET       | /signup         | users#new        | 新規ユーザーを作成するページ        |
 | users     | GET       | /users          | users#index      | すべてのユーザーを一覧するページ    |
 | user      | GET       | /users/:id      | users#show       | :id のユーザーを表示するページ      |
+| signup    | GET       | /signup         | users#new        | 新規ユーザーを作成するページ        |
 | edit_user | GET       | /users/:id/edit | users#edit       | :id のユーザーを編集するページ      |
 | users     | POST      | /users          | users#create     | ユーザーを作成するアクション        |
 | user      | PATCH/PUT | /users/:id      | users#update     | :id のユーザーを更新するアクション  |
@@ -113,6 +113,14 @@ TODO:
 | jobs      | POST      | /jobs           | jobs#create      | 求人票を作成するアクション          |
 | job       | PATCH/PUT | /jobs/:id       | jobs#update      | :id の求人票を更新するアクション    |
 | job       | DELETE    | /jobs/:id       | jobs#destroy     | :id の求人票を削除するアクション    |
+
+## Likes
+
+| Prefix | HTTP Verb | Path | Controller#Action | Used for |
+|:---|:---|:---|:---|:---|
+| likes     | POST      | /likes          | likes#create     | いいねを作成するアクション          |
+| like      | PATCH/PUT | /likes/:id      | likes#update     | :id のいいねを更新するアクション    |
+| like      | DELETE    | /likes/:id      | likes#destroy    | :id のいいねを削除するアクション    |
 
 # Database Design
 
