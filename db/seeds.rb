@@ -36,36 +36,28 @@ end
 end
 
 Job.all.each do |job|
-  Employee.first do |employee|
-    Like.create!(
-      employee:      employee,
-      job:           job,
-      employee_like: true,
-      job_like:      true
+  Employee.first.likes.create!(
+    job:           job,
+    employee_like: true,
+    job_like:      true
     )
   end
-  Employee.second do |employee|
-    Like.create!(
-      employee:      employee,
-      job:           job,
-      employee_like: true,
-      job_like:      false
+  Employee.second.likes.create!(
+    job:           job,
+    employee_like: true,
+    job_like:      false
     )
   end
-  Employee.third do |employee|
-    Like.create!(
-      employee:      employee,
-      job:           job,
-      employee_like: false,
-      job_like:      true
+  Employee.third.likes.create!(
+    job:           job,
+    employee_like: false,
+    job_like:      true
     )
   end
-  Employee.fourth do |employee|
-    Like.create!(
-      employee:      employee,
-      job:           job,
-      employee_like: false,
-      job_like:      false
+  Employee.fourth.likes.create!(
+    job:           job,
+    employee_like: false,
+    job_like:      false
     )
   end
 end
