@@ -14,7 +14,7 @@
 <%= link_to 'Back', users_path %>
 
 <div>
-  <% if @jobs.any? %>
+  <% if @jobs && @jobs.any? %>
     <h3>Jobs (<%= @jobs.count %>)</h3>
     <ul class="jobs">
       <%= render template: 'jobs/index' %>
