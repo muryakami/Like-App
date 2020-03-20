@@ -12,6 +12,7 @@ RUN apk update && \
   gcc \
   git \
   g++ \
+  less \
   libc-dev \
   libxml2-dev \
   linux-headers \

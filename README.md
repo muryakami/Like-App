@@ -19,7 +19,7 @@
 
 # Demo
 
-- https://vast-everglades-51104.herokuapp.com/
+- https://infinite-fortress-05948.herokuapp.com/
 
 ## Images
 
@@ -51,6 +51,24 @@ $ git clone git@github.com:muryakami/Like-App.git
 $ cd Like-App
 ```
 
+## Build the Application
+
+``` bash
+$ docker-compose build
+```
+
+## Create DataBase
+
+``` bash
+$ docker-compose run --rm web rails db:create
+```
+
+## Migration
+
+``` bash
+$ docker-compose run --rm web rails db:migrate
+```
+
 ## Start the Application
 
 ``` bash
@@ -63,14 +81,45 @@ $ docker-compose up -d
 $ docker-compose down
 ```
 
-## Deploy the Application to Heroku
+# Deploy the Application to Heroku
+
+## Log in Heroku Container Registry
+
+``` bash
+$ heroku container:login
+```
+
+## Create the Heroku Application
+
+``` bash
+$ heroku create
+```
+
+## Create the Heroku Application Add-ons
+
+``` bash
+$ heroku addons:create heroku-postgresql:hobby-dev
+```
+
+## Push the Docker Image
 
 ``` bash
 $ heroku container:push web
+```
+
+## Release the Heroku Application
+
+``` bash
 $ heroku container:release web
 ```
 
-## View the Application
+## Migration
+
+``` bash
+$ heroku run rails db:migrate
+```
+
+## Access the Heroku Application
 
 ``` bash
 $ heroku open
