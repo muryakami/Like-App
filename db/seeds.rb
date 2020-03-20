@@ -41,25 +41,21 @@ Job.all.each do |job|
     employee_like: true,
     job_like:      true
     )
-  end
   Employee.second.likes.create!(
     job:           job,
     employee_like: true,
     job_like:      false
     )
-  end
   Employee.third.likes.create!(
     job:           job,
     employee_like: false,
     job_like:      true
     )
-  end
   Employee.fourth.likes.create!(
     job:           job,
     employee_like: false,
     job_like:      false
     )
-  end
 end
 
 Employer.create!(
