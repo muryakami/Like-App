@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-3.times do |n|
+5.times do |n|
   User.create!(
     name:                  "企業#{n + 1}",
     email:                 "employer#{n + 1}@test.com",
@@ -16,7 +16,7 @@
   )
 end
 
-3.times do |n|
+5.times do |n|
   User.create!(
     name:                  "求職者#{n + 1}",
     email:                 "employee#{n + 1}@test.com",
@@ -26,11 +26,46 @@ end
   )
 end
 
-3.times do |n|
+5.times do |n|
   Employer.all.each do |employer|
     employer.jobs.create!(
       title:   "タイトル#{n + 1}",
       content: "テキストテキストテキストテキスト#{n + 1}"
+    )
+  end
+end
+
+Job.all.each do |job|
+  Employee.first do |employee|
+    Like.create!(
+      employee:      employee,
+      job:           job,
+      employee_like: true,
+      job_like:      true
+    )
+  end
+  Employee.second do |employee|
+    Like.create!(
+      employee:      employee,
+      job:           job,
+      employee_like: true,
+      job_like:      false
+    )
+  end
+  Employee.third do |employee|
+    Like.create!(
+      employee:      employee,
+      job:           job,
+      employee_like: false,
+      job_like:      true
+    )
+  end
+  Employee.fourth do |employee|
+    Like.create!(
+      employee:      employee,
+      job:           job,
+      employee_like: false,
+      job_like:      false
     )
   end
 end
