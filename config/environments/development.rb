@@ -3,7 +3,7 @@ Rails.application.configure do
 
   # Settings for Host Authorization
   # https://github.com/rails/rails/pull/33145
-  config.hosts << "glacial-depths-06469.herokuapp.com"
+  config.hosts << "infinite-fortress-05948.herokuapp.com"
 
   # https://qiita.com/terufumi1122/items/73da039e6fc90ee0a63f
   # https://yomoyamablog.coconala.co.jp/entry/2018/12/04
