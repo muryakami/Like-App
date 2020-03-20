@@ -119,12 +119,6 @@ $ heroku run rails db:migrate
 $ heroku open
 ```
 
-## View the Application
-
-``` bash
-$ heroku open
-```
-
 # Note
 
 TODO:
