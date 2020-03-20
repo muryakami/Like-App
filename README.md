@@ -57,7 +57,13 @@ $ cd Like-App
 $ docker-compose build
 ```
 
-## Migrate to the Application
+## Create DataBase
+
+``` bash
+$ docker-compose run --rm web rails db:create
+```
+
+## Migration
 
 ``` bash
 $ docker-compose run --rm web rails db:migrate
@@ -107,7 +113,7 @@ $ heroku container:push web
 $ heroku container:release web
 ```
 
-## Migrate to the Heroku Application
+## Migration
 
 ``` bash
 $ heroku run rails db:migrate
